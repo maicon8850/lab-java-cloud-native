@@ -6,7 +6,7 @@ import java.util.Map;
 public class GenericsExempleMap {
     public static void main(String[] args) {
         // Exemplo sem Generics
-        Map mapaSemGenerics = new HashMap();
+        Map<String, Object> mapaSemGenerics = new HashMap<>();
         mapaSemGenerics.put("Chave 1", 10);
         mapaSemGenerics.put("Chave 2", "valor"); // Permite adicionar qualquer tipo de objeto
 
@@ -22,13 +22,11 @@ public class GenericsExempleMap {
             System.out.println("Chave: " + chave + ", Valor: " + valor);
         }
 
-        // Iterando sobre o mapa sem Generics (necessário fazer cast)
-        for (Object obj : mapaSemGenerics.entrySet()) {
-            Map.Entry entry = (Map.Entry) obj;
-            String chave = (String) entry.getKey();
+        // Iterando sobre o mapa sem Generics
+        for (Map.Entry<String, Object> entry : mapaSemGenerics.entrySet()) {
+            String chave = entry.getKey();
             Object valor = entry.getValue();
             System.out.println("Chave: " + chave + ", Valor: " + valor);
         }
     }
-}
 }
