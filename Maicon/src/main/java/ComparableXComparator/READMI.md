@@ -107,6 +107,10 @@ class CompararAnoAutorTitulo implements Comparator<Livro> {
 
 ---
 
+### EM RESUMO:
+O Comparable permite que você diga uma regra de comparação para a classe que implementar essa interface, como uma espécie de regra padrão ou regra oficial, enquanto que se você quiser fugir dessa regra padrão, você pode criar suas classes comparadoras, que vão extender a classe 
+Comparator fazendo cada uma a sua própria regra.
+
 ### Referências:
 
 [1] "Comparable vs Comparator in Java." GeeksforGeeks. Disponível em: https://www.geeksforgeeks.org/comparable-vs-comparator-in-java/.
