@@ -3,7 +3,7 @@ package EstruturaSequencial;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class Exercicio00 {
     public static void main(String[]args){
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in); // declarando a  classe para entradas de dados

@@ -20,4 +20,3 @@ System.out.printf()	Método que imprime texto formatado (printf = print formatad
 "AREA = %.2f%n"	Texto que será impresso, com um espaço reservado para um número decimal (%.2f).
 %.2f	Formata um número decimal com duas casas decimais.
 %n	Quebra de linha (igual \n, mas mais compatível entre sistemas).
-area	Variável cujo valor será inserido no %f.
